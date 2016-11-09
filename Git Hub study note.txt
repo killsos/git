@@ -16,3 +16,23 @@ octo 词根 表示“八”之义
 3 git commit -m "commit message"
 4 git remote add origin repository_url
 5 git push origin master
+
+基本操作
+1 初始化仓库
+$ git init
+
+2 查看仓库状态
+$ git status
+
+3 向暂存区添加文件
+$ git add .
+
+4 从暂存区向仓库添加
+$ git commit -m "message"
+
+5 查看提交日志
+$ git log --pretty=short
+$ git log -p
+
+6 查看工作树和暂存区的区别
+$ git diff
