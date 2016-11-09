@@ -3,3 +3,16 @@ Git Hub 入门与实践
 octocat 章鱼猫
 
 octo 词根 表示“八”之义
+
+如果已有仓库
+1 git clone
+2 git add .
+3 git commit -m "commit message"
+4 git push origin master
+
+如果有仓库
+1 git init
+2 git add .
+3 git commit -m "commit message"
+4 git remote add origin repository_url
+5 git push origin master
