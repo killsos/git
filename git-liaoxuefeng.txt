@@ -18,3 +18,26 @@ Git迅速成为最流行的分布式版本控制系统，尤其是2008年，GitH
 既然每个人电脑上都有一个完整的版本库，那多个人如何协作呢？比方说你在自己电脑上改了文件A，
 你的同事也在他的电脑上改了文件A，这时，你们俩之间只需把各自的修改推送给对方，
 就可以互相看到对方的修改了.
+
+wget不是安装方式 他是一种下载软件类似与迅雷 如果要下载一个软件 我们可以直接
+wget 下载地址
+
+ap-get是ubuntu下的一个软件安装方式，它是基于debain
+
+yum是redhat、centos下的一个软件安装方式，它是基于Linux的
+
+Homebrew就是mac下的一个软件安装方式，它是基于Mac
+
+git安装
+mac             sudo brew install git
+Linux           sudo yum install git   sudo apt-get install git
+
+1 repository install
+
+$ git init
+
+2 check repository status
+
+$ git status
+
+3 
