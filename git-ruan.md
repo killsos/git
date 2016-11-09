@@ -1,6 +1,6 @@
 # Git远程操作详解 学习笔记
 
-![git 原理](git.jpg)
+![git 原理](http://image.beekka.com/blog/2014/bg2014061202.jpg)
 
 ### 一、git clone
 
