@@ -1,0 +1,10 @@
+1 安装Git
+
+yum install git
+
+
+2 起步
+
+git --version
+
+git commit -m ""
