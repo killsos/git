@@ -3,8 +3,107 @@
 yum install git
 
 
-2 起步
+2 简单
 
 git --version
 
+
+git --help
+
 git commit -m ""
+
+-m = --message
+
+使用裸双破折号 -- 的约定来分离一系列参数
+
+
+3.1 创建初始版本库
+git init
+
+3.2 添加文件到staged
+git add filename
+
+这里只是暂存到staged中
+
+3.3 查看状态
+git status
+
+3.4 添加版本库
+git commit -m ''
+
+3.5 配置提交作者
+git config user.name "yourname"
+git config user.mail "youremail"
+
+3.6 提交历史
+git  log
+
+3.7 具体提交信息
+git show  "提交码"
+
+3.8 查看提交历史
+git show-brance
+
+3.9 查看提交差异
+git diff  "提交码1" \ "提交码2"
+
+3.10 删除文件
+git rm fileName
+git commit -m ""
+
+3.11 修改文件名
+git mv "修改后文件名"  "修改前文件名"
+git commit -m ""
+
+3.12 克隆
+git clone
+
+3.13 配置文件
+.git/config
+~/.gitconfig
+etc/gitcofig
+
+3.14 移除配置
+git config unset ....
+
+3.15 配置别名
+git config --global alias.show-graph \ "log --grpah --abbrev-commit --pretty=oneline"
+
+4 git基本概念
+git版本库 repository只是一个简单的数据库 其中包含所有用来维护与管理项目修订版本和历史的信息
+
+git维护两个主要的数据结构 对象库 object-store和索引 index
+所有这些版本库数据存放在工作目录根目录下一个名为.git的隐藏目录中
+
+git放在对象库里的对象只有四种类型 块 blob  目录树 tree 提交 commit 标签 tag
+
+ 块 blob
+ binary large object
+
+
+git ls-files --stage
+
+
+创建分支
+git branch branch [starting-commit]
+
+列出分支名
+git branch
+
+查看分支
+git show-branch
+
+切换分支
+git checkout
+
+合并变更到不同分支
+git checkout -m "source"
+
+创建并检出新分支
+git checkout -b newbranch start-point
+
+删除分支
+git branch -d branchName
+
+
+========未完
