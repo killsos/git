@@ -113,8 +113,7 @@ git clone后默认是master同时会自动将仓库标识符设为origin
 
 git branch -a 查看所有分支
 
-获取远程仓库的分支ming
-
+获取远程仓库的分支名
 git checkout -b feature-D origin/feature-D
 
 git pull 获取最新的远程仓库分支
