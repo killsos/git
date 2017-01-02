@@ -121,7 +121,83 @@ git pull 获取最新的远程仓库分支
 
 pull request
 
+删除文件 删除之后必须commit
+git rm fileName
 
+重名文件/移动文件
+git mv filenameOld  filenameNew
+
+git mv fileName  newTree
+
+日志
+git log
+
+
+查看版本变化
+
+git reflog
+
+
+回退版本
+
+git reset --hard 版本号
+
+查看分支
+git branch
+
+创建分支
+git branch newbranchName
+
+切换分支
+git checkout branchName
+
+合并分支(主动合并)
+git merge  被合并分支名
+
+删除分支
+git branch -d 分支名
+
+创建并切换到新分支名
+git checkout -b 新分支名字
+
+查看远程仓库
+git remote
+
+查看仓库地址
+git remote -v
+
+
+删除远程仓库
+git remote remove 远程仓库名
+
+添加远程仓库名
+git remote add 远程仓库名 远程仓库地址
+
+修改远程仓库名称
+git remote rename oldName newName
+
+公钥登录
+
+1 配置ssh格式的远程仓库地址
+git  remote add 远程仓库名  远程仓库地址
+
+2 创建ssh key
+ssh-key -t rsa -C "mail"
+在用户主目录下的.ssh目录内有id_rsa私钥和id_rsa.pub公钥两个文件
+将公钥添加到git服务器上
+
+3 提交版本到远程仓库
+git push 远程仓库名  分支名
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 hub 命令
 mac: brew install hub
 
